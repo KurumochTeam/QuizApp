@@ -148,17 +148,17 @@
 				92AB82AD2340E54300EF700A /* Misc */,
 				92AB82AC2340E52100EF700A /* Services */,
 				92AB82AB2340E51B00EF700A /* Model */,
-				92AB82AA2340E4E300EF700A /* Presentation */,
+				92AB82AA2340E4E300EF700A /* Presentations */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		92AB82AA2340E4E300EF700A /* Presentation */ = {
+		92AB82AA2340E4E300EF700A /* Presentations */ = {
 			isa = PBXGroup;
 			children = (
 				92AB82B02340E57E00EF700A /* MainMenu */,
 			);
-			path = Presentation;
+			path = Presentations;
 			sourceTree = "<group>";
 		};
 		92AB82AB2340E51B00EF700A /* Model */ = {
