@@ -3,3 +3,5 @@ os: osx
 osx_image: xcode11
 xcode_project: QuizApp/QuizApp.xcodeproj # path to your xcodeproj folder
 xcode_scheme: QuizAppTests
+script:
+- xcodebuild [DEFAULT_OPTIONS] CODE_SIGNING_REQUIRED=NO
