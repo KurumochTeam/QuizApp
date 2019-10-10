@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F01D25A2348B51A00F78484 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2592348B51A00F78484 /* MenuButton.swift */; };
+		1F01D25C2348B7E900F78484 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D25B2348B7E900F78484 /* UIViewExtension.swift */; };
+		1F01D25F2348DC5D00F78484 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D25E2348DC5D00F78484 /* NibLoadable.swift */; };
+		1F01D2612348DCD800F78484 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2602348DCD800F78484 /* NibOwnerLoadable.swift */; };
+		1F01D2632348F78A00F78484 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2622348F78A00F78484 /* UIColorExtension.swift */; };
+		1F01D2652349117300F78484 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2642349117300F78484 /* UIViewControllerExtension.swift */; };
+		1F01EDF4234684CA006245A3 /* MenuButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F01EDF3234684CA006245A3 /* MenuButton.xib */; };
 		92AB82762340E3BA00EF700A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82752340E3BA00EF700A /* AppDelegate.swift */; };
 		92AB82782340E3BA00EF700A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82772340E3BA00EF700A /* SceneDelegate.swift */; };
 		92AB82802340E3BA00EF700A /* QuizApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92AB827E2340E3BA00EF700A /* QuizApp.xcdatamodeld */; };
@@ -15,7 +22,7 @@
 		92AB82902340E3C000EF700A /* QuizAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB828F2340E3C000EF700A /* QuizAppTests.swift */; };
 		92AB829B2340E3C000EF700A /* QuizAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB829A2340E3C000EF700A /* QuizAppUITests.swift */; };
 		92AB82B22340E5AD00EF700A /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82B12340E5AD00EF700A /* MainMenuViewController.swift */; };
-		92AB82B52340E5D500EF700A /* MainMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82B42340E5D500EF700A /* MainMenuViewModel.swift */; };
+		92AB82B52340E5D500EF700A /* MainMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82B42340E5D500EF700A /* MainMenuPresenter.swift */; };
 		92AB82B72340E5EF00EF700A /* MainMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AB82B62340E5EF00EF700A /* MainMenu.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F01D2592348B51A00F78484 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		1F01D25B2348B7E900F78484 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = "QuizApp/Classes/Common Views/MenuButton/UIViewExtension.swift"; sourceTree = SOURCE_ROOT; };
+		1F01D25E2348DC5D00F78484 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		1F01D2602348DCD800F78484 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
+		1F01D2622348F78A00F78484 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = QuizApp/Resources/UIColorExtension.swift; sourceTree = SOURCE_ROOT; };
+		1F01D2642349117300F78484 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewControllerExtension.swift; path = QuizApp/Resources/UIViewControllerExtension.swift; sourceTree = SOURCE_ROOT; };
+		1F01EDF3234684CA006245A3 /* MenuButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuButton.xib; sourceTree = "<group>"; };
 		92AB82722340E3BA00EF700A /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AB82752340E3BA00EF700A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92AB82772340E3BA00EF700A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +65,7 @@
 		92AB829A2340E3C000EF700A /* QuizAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppUITests.swift; sourceTree = "<group>"; };
 		92AB829C2340E3C000EF700A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92AB82B12340E5AD00EF700A /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
-		92AB82B42340E5D500EF700A /* MainMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewModel.swift; sourceTree = "<group>"; };
+		92AB82B42340E5D500EF700A /* MainMenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuPresenter.swift; sourceTree = "<group>"; };
 		92AB82B62340E5EF00EF700A /* MainMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainMenu.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +94,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F01D25D2348DC3F00F78484 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				1F01D25E2348DC5D00F78484 /* NibLoadable.swift */,
+				1F01D2602348DCD800F78484 /* NibOwnerLoadable.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		1F01D266234911E200F78484 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1F01EDF223468484006245A3 /* MenuButton */ = {
+			isa = PBXGroup;
+			children = (
+				1F01EDF3234684CA006245A3 /* MenuButton.xib */,
+				1F01D2592348B51A00F78484 /* MenuButton.swift */,
+			);
+			path = MenuButton;
+			sourceTree = "<group>";
+		};
 		92AB82692340E3BA00EF700A = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +217,9 @@
 		92AB82AD2340E54300EF700A /* Misc */ = {
 			isa = PBXGroup;
 			children = (
+				1F01D25B2348B7E900F78484 /* UIViewExtension.swift */,
+				1F01D2622348F78A00F78484 /* UIColorExtension.swift */,
+				1F01D2642349117300F78484 /* UIViewControllerExtension.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -192,6 +234,9 @@
 		92AB82AF2340E56600EF700A /* Common Views */ = {
 			isa = PBXGroup;
 			children = (
+				1F01D266234911E200F78484 /* Controller */,
+				1F01D25D2348DC3F00F78484 /* Reusable */,
+				1F01EDF223468484006245A3 /* MenuButton */,
 			);
 			path = "Common Views";
 			sourceTree = "<group>";
@@ -200,7 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				92AB82B12340E5AD00EF700A /* MainMenuViewController.swift */,
-				92AB82B42340E5D500EF700A /* MainMenuViewModel.swift */,
+				92AB82B42340E5D500EF700A /* MainMenuPresenter.swift */,
 				92AB82B62340E5EF00EF700A /* MainMenu.storyboard */,
 			);
 			path = MainMenu;
@@ -310,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F01EDF4234684CA006245A3 /* MenuButton.xib in Resources */,
 				92AB82852340E3BF00EF700A /* LaunchScreen.storyboard in Resources */,
 				92AB82822340E3BF00EF700A /* Assets.xcassets in Resources */,
 				92AB82B72340E5EF00EF700A /* MainMenu.storyboard in Resources */,
@@ -338,10 +384,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				92AB82B22340E5AD00EF700A /* MainMenuViewController.swift in Sources */,
+				1F01D2612348DCD800F78484 /* NibOwnerLoadable.swift in Sources */,
 				92AB82762340E3BA00EF700A /* AppDelegate.swift in Sources */,
-				92AB82B52340E5D500EF700A /* MainMenuViewModel.swift in Sources */,
+				1F01D25F2348DC5D00F78484 /* NibLoadable.swift in Sources */,
+				92AB82B52340E5D500EF700A /* MainMenuPresenter.swift in Sources */,
+				1F01D25A2348B51A00F78484 /* MenuButton.swift in Sources */,
+				1F01D25C2348B7E900F78484 /* UIViewExtension.swift in Sources */,
+				1F01D2652349117300F78484 /* UIViewControllerExtension.swift in Sources */,
 				92AB82802340E3BA00EF700A /* QuizApp.xcdatamodeld in Sources */,
 				92AB82782340E3BA00EF700A /* SceneDelegate.swift in Sources */,
+				1F01D2632348F78A00F78484 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
