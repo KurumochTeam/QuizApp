@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FF938F7235106C1000C467A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF938F6235106C1000C467A /* R.generated.swift */; };
 		92AB82762340E3BA00EF700A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82752340E3BA00EF700A /* AppDelegate.swift */; };
 		92AB82782340E3BA00EF700A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82772340E3BA00EF700A /* SceneDelegate.swift */; };
 		92AB82802340E3BA00EF700A /* QuizApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92AB827E2340E3BA00EF700A /* QuizApp.xcdatamodeld */; };
@@ -36,7 +37,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1FF25EFE234FACD00062BC4D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FF9390223510CB9000C467A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1FF938F6235106C1000C467A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		92AB82722340E3BA00EF700A /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AB82752340E3BA00EF700A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92AB82772340E3BA00EF700A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,9 +104,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FF938F5235106C1000C467A /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				1FF938F6235106C1000C467A /* R.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 		92AB82692340E3BA00EF700A = {
 			isa = PBXGroup;
 			children = (
+				1FF938F5235106C1000C467A /* Generated */,
 				92AB82742340E3BA00EF700A /* QuizApp */,
 				92AB828E2340E3C000EF700A /* QuizAppTests */,
 				92AB82992340E3C000EF700A /* QuizAppUITests */,
@@ -213,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92AB829F2340E3C000EF700A /* Build configuration list for PBXNativeTarget "QuizApp" */;
 			buildPhases = (
+				1FF938F02351021C000C467A /* ShellScript */,
 				92AB826E2340E3BA00EF700A /* Sources */,
 				92AB826F2340E3BA00EF700A /* Frameworks */,
 				92AB82702340E3BA00EF700A /* Resources */,
+				1FF25EFE234FACD00062BC4D /* CopyFiles */,
+				1FF9390223510CB9000C467A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -332,6 +368,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FF938F02351021C000C467A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Generated/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$SRCROOT/rswift\" generate \"$SRCROOT/Generated/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92AB826E2340E3BA00EF700A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -342,6 +400,7 @@
 				92AB82B52340E5D500EF700A /* MainMenuViewModel.swift in Sources */,
 				92AB82802340E3BA00EF700A /* QuizApp.xcdatamodeld in Sources */,
 				92AB82782340E3BA00EF700A /* SceneDelegate.swift in Sources */,
+				1FF938F7235106C1000C467A /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +567,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuizApp/Libraries/Rswift",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Libraries",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/QuizApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,6 +591,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QuizApp/Libraries/Rswift",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Libraries",
+				);
 				INFOPLIST_FILE = "$(SRCROOT)/QuizApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
