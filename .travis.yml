@@ -5,7 +5,14 @@ xcode_project: QuizApp/QuizApp.xcodeproj # path to your xcodeproj folder
 xcode_scheme: QuizAppTests
 script:
 - xcodebuild clean test -project QuizApp.xcodeproj -scheme QuizAppTests -destination "platform=iOS Simulator,name=iPhone 11 Pro Max,OS=13.0" CODE_SIGNING_ALLOWED=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+env:
+  global:
+    - FRAMEWORK_NAME="Rswift"
 before_install:
-- brew install carthage
-- cd QuizApp
-- carthage update
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+before_script:
+  - carthage bootstrap
+before_deploy:
+  - carthage build --no-skip-current
+  - carthage archive $FRAMEWORK_NAME
