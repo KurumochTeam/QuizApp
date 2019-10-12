@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1FF938F7235106C1000C467A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF938F6235106C1000C467A /* R.generated.swift */; };
-		926D1CE92351BF58006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
 		926D1CEB2351C201006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
+		926D1CF42351C84E006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
+		926D1CF62351C8C8006DAAE8 /* Rswift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		92AB82762340E3BA00EF700A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82752340E3BA00EF700A /* AppDelegate.swift */; };
 		92AB82782340E3BA00EF700A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82772340E3BA00EF700A /* SceneDelegate.swift */; };
 		92AB82802340E3BA00EF700A /* QuizApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92AB827E2340E3BA00EF700A /* QuizApp.xcdatamodeld */; };
@@ -44,19 +45,10 @@
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1FF9390223510CB9000C467A /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				926D1CF62351C8C8006DAAE8 /* Rswift.framework in CopyFiles */,
 			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -87,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				926D1CE92351BF58006DAAE8 /* Rswift.framework in Frameworks */,
+				926D1CF42351C84E006DAAE8 /* Rswift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +257,6 @@
 				92AB826F2340E3BA00EF700A /* Frameworks */,
 				92AB82702340E3BA00EF700A /* Resources */,
 				1FF25EFE234FACD00062BC4D /* CopyFiles */,
-				1FF9390223510CB9000C467A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
