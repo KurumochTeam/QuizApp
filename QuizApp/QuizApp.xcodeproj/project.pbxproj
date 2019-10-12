@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1FF938F7235106C1000C467A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF938F6235106C1000C467A /* R.generated.swift */; };
 		926D1CE92351BF58006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
+		926D1CEB2351C201006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
 		92AB82762340E3BA00EF700A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82752340E3BA00EF700A /* AppDelegate.swift */; };
 		92AB82782340E3BA00EF700A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82772340E3BA00EF700A /* SceneDelegate.swift */; };
 		92AB82802340E3BA00EF700A /* QuizApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92AB827E2340E3BA00EF700A /* QuizApp.xcdatamodeld */; };
@@ -94,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				926D1CEB2351C201006DAAE8 /* Rswift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,6 +625,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QuizAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -644,6 +650,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = QuizAppTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
