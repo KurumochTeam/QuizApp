@@ -7,4 +7,5 @@ script:
 - xcodebuild clean test -project QuizApp/QuizApp.xcodeproj -scheme QuizAppTests -destination "platform=iOS Simulator,name=iPhone 11 Pro Max,OS=13.0" CODE_SIGNING_ALLOWED=NO CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 before_install:
 - brew install carthage
+- cd QuizApp
 - carthage update
