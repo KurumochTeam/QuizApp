@@ -9,9 +9,9 @@
 import UIKit
 
 final class MainMenuViewController: UIViewController {
-    @IBOutlet private weak var playMenuButtom: MenuButton!
-    @IBOutlet private weak var rankingsMenuButton: MenuButton!
-    @IBOutlet private weak var settingsMenuButton: MenuButton!
+    @IBOutlet private var playMenuButtom: MenuButton!
+    @IBOutlet private var rankingsMenuButton: MenuButton!
+    @IBOutlet private var settingsMenuButton: MenuButton!
     
     var presenter: MainMenuPresenter?
     
@@ -22,13 +22,14 @@ final class MainMenuViewController: UIViewController {
     }
     
     private func configureButtons() {
-        playMenuButtom.configure(with: "Play", and: .play)
-        rankingsMenuButton.configure(with: "Rankings", and: .rankings)
-        settingsMenuButton.configure(with: "Settings", and: .settings)
+        playMenuButtom.configure(with: "Play".localized, and: .play)
+        rankingsMenuButton.configure(with: "Rankings".localized, and: .rankings)
+        settingsMenuButton.configure(with: "Settings".localized, and: .settings)
         
-        playMenuButtom.delegate = self
-        rankingsMenuButton.delegate = self
-        settingsMenuButton.delegate = self
+        let presenter = self.presenter
+        playMenuButtom.onTapAction = { presenter?.onPlayPressed() }
+        rankingsMenuButton.onTapAction = { presenter?.onRankingsPressed() }
+        settingsMenuButton.onTapAction = { presenter?.onSettingsPressed() }
     }
 }
 
@@ -39,22 +40,6 @@ extension MainMenuViewController: MainMenuView {
     
     func hideGameTypes() {
         // todo
-    }
-}
-
-extension MainMenuViewController: ButtonDelegate {
-    func didButtonTap(_ button: MenuButton) {
-        if button == playMenuButtom {
-            presenter?.onStartPressed()
-        }
-        
-        if button == rankingsMenuButton {
-            presenter?.onRankingsPressed()
-        }
-        
-        if button == settingsMenuButton {
-            presenter?.onSettingsPressed() 
-        }
     }
 }
 

@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  QuizApp
+
+  Created by Aleksandr on 14/10/2019.
+  Copyright © 2019 Kurumoch Team LLC. All rights reserved.
+*/
+
+// MainMenuViewController
+"Play" = "Play";
+"Rankings" = "Rankings";
+"Settings" = "Settings";

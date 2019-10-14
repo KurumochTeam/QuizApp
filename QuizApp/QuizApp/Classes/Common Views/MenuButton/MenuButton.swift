@@ -13,7 +13,7 @@ final class MenuButton: UIView, NibOwnerLoadable {
     @IBOutlet private weak var imageView: UIImageView!
     @IBOutlet private weak var containerView: UIView!
     
-    var delegate: ButtonDelegate?
+    var onTapAction: (() -> ())?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,30 +37,29 @@ final class MenuButton: UIView, NibOwnerLoadable {
     }
     
     @IBAction func didTapButton(_ sender: UIButton) {
-        delegate?.didButtonTap(self)
+        onTapAction?()
     }
 }
 
 extension MenuButton {
     enum Image: String {
         case play = "gamecontroller.fill"
-        case rankings = "rosette" // todo: replace image
+        case rankings = "rosette"
         case settings = "gear"
     }
-}
-
-protocol ButtonDelegate {
-    func didButtonTap(_ button: MenuButton)
 }
 
 private extension MenuButton {
     struct LayerConstants {
         static let relativeWidth = CGFloat(0.83)
         static let shadowRadius = CGFloat(40)
+        static let shadowOffset = CGSize(width: 0, height: 8)
     }
     
     func addCornerRadius() {
-        containerView.layer.cornerRadius = layer.frame.height * LayerConstants.relativeWidth / 2
+        containerView.layer.cornerRadius =
+            layer.frame.height * LayerConstants.relativeWidth / 2
+        
         containerView.layer.masksToBounds = true
     }
     
@@ -77,9 +76,9 @@ private extension MenuButton {
         shadowLayer.cornerRadius = containerView.layer.cornerRadius
         
         shadowLayer.shadowOpacity = 1.0
-        shadowLayer.backgroundColor = UIColor.red.cgColor
+        shadowLayer.backgroundColor = UIColor.violetMain.cgColor
         shadowLayer.shadowColor = UIColor.violetMain.cgColor
-        shadowLayer.shadowOffset = CGSize(width: 0, height: 8)
+        shadowLayer.shadowOffset = LayerConstants.shadowOffset
         shadowLayer.shadowRadius = LayerConstants.shadowRadius
         shadowLayer.masksToBounds = false
         layer.masksToBounds = false
