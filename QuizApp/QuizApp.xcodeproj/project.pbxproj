@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1F01D25A2348B51A00F78484 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2592348B51A00F78484 /* MenuButton.swift */; };
-		1F01D25C2348B7E900F78484 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D25B2348B7E900F78484 /* UIViewExtension.swift */; };
 		1F01D25F2348DC5D00F78484 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D25E2348DC5D00F78484 /* NibLoadable.swift */; };
 		1F01D2612348DCD800F78484 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2602348DCD800F78484 /* NibOwnerLoadable.swift */; };
 		1F01D2632348F78A00F78484 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2622348F78A00F78484 /* UIColorExtension.swift */; };
@@ -45,7 +44,6 @@
 
 /* Begin PBXFileReference section */
 		1F01D2592348B51A00F78484 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
-		1F01D25B2348B7E900F78484 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = "QuizApp/Classes/Common Views/MenuButton/UIViewExtension.swift"; sourceTree = SOURCE_ROOT; };
 		1F01D25E2348DC5D00F78484 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		1F01D2602348DCD800F78484 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		1F01D2622348F78A00F78484 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = QuizApp/Resources/UIColorExtension.swift; sourceTree = SOURCE_ROOT; };
@@ -217,7 +215,6 @@
 		92AB82AD2340E54300EF700A /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				1F01D25B2348B7E900F78484 /* UIViewExtension.swift */,
 				1F01D2622348F78A00F78484 /* UIColorExtension.swift */,
 				1F01D2642349117300F78484 /* UIViewControllerExtension.swift */,
 			);
@@ -389,7 +386,6 @@
 				1F01D25F2348DC5D00F78484 /* NibLoadable.swift in Sources */,
 				92AB82B52340E5D500EF700A /* MainMenuPresenter.swift in Sources */,
 				1F01D25A2348B51A00F78484 /* MenuButton.swift in Sources */,
-				1F01D25C2348B7E900F78484 /* UIViewExtension.swift in Sources */,
 				1F01D2652349117300F78484 /* UIViewControllerExtension.swift in Sources */,
 				92AB82802340E3BA00EF700A /* QuizApp.xcdatamodeld in Sources */,
 				92AB82782340E3BA00EF700A /* SceneDelegate.swift in Sources */,

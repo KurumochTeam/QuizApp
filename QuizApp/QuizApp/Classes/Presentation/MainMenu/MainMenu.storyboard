@@ -19,27 +19,23 @@
                                 <rect key="frame" x="41.5" y="273.5" width="331" height="450"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gun-WY-4ka" customClass="MenuButton" customModule="QuizApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="331" height="103"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="112.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="103" id="AqW-gy-Dbl"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaT-MJ-bbZ" customClass="MenuButton" customModule="QuizApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="173.5" width="331" height="103"/>
+                                        <rect key="frame" x="0.0" y="168.5" width="331" height="112.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="103" id="VRT-aY-Ckn"/>
-                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvI-Pu-LSe" customClass="MenuButton" customModule="QuizApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="347" width="331" height="103"/>
+                                        <rect key="frame" x="0.0" y="337.5" width="331" height="112.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="103" id="agF-3j-FEi"/>
-                                        </constraints>
                                     </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gun-WY-4ka" firstAttribute="height" secondItem="GzC-kW-MAI" secondAttribute="height" multiplier="0.25" id="73b-IY-Ksg"/>
+                                    <constraint firstItem="kaT-MJ-bbZ" firstAttribute="height" secondItem="Gun-WY-4ka" secondAttribute="height" id="Ffy-WR-G9I"/>
+                                    <constraint firstItem="FvI-Pu-LSe" firstAttribute="height" secondItem="Gun-WY-4ka" secondAttribute="height" id="Nje-8D-eJu"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
