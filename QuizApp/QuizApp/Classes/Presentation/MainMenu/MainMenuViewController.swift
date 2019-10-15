@@ -21,13 +21,23 @@ final class MainMenuViewController: UIViewController {
     }
     
     private func configureButtons() {
-        playMenuButtom.configure(with: "Play".localized, and: .play)
-        rankingsMenuButton.configure(with: "Rankings".localized, and: .rankings)
-        settingsMenuButton.configure(with: "Settings".localized, and: .settings)
+        playMenuButtom.configure(
+            title: "Play".localized,
+            image: .play,
+            tapAction: presenter?.onPlayPressed
+        )
         
-        playMenuButtom.onTapAction = presenter?.onPlayPressed
-        rankingsMenuButton.onTapAction = presenter?.onRankingsPressed
-        settingsMenuButton.onTapAction = presenter?.onSettingsPressed
+        rankingsMenuButton.configure(
+            title: "Rankings".localized,
+            image: .rankings,
+            tapAction: presenter?.onRankingsPressed
+        )
+        
+        settingsMenuButton.configure(
+            title: "Settings".localized,
+            image: .settings,
+            tapAction: presenter?.onSettingsPressed
+        )
     }
 }
 

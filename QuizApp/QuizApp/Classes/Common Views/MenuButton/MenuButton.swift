@@ -8,12 +8,12 @@
 
 import UIKit
 
-final class MenuButton: UIView, NibOwnerLoadable {
+class MenuButton: UIView, NibOwnerLoadable {
     @IBOutlet private var titleLabel: UILabel!
     @IBOutlet private var imageView: UIImageView!
     @IBOutlet private var containerView: UIView!
     
-    var onTapAction: (() -> ())?
+    private var onTapAction: (() -> ())?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,9 +31,11 @@ final class MenuButton: UIView, NibOwnerLoadable {
         addFloatingShadow()
     }
     
-    func configure(with title: String, and image: Image) {
+    func configure(title: String, image: Image, tapAction: (() -> ())?) {
         self.titleLabel.text = title
         imageView.image = UIImage(systemName: image.rawValue)
+        
+        onTapAction = tapAction
     }
     
     @IBAction private func didTapButton(_ sender: UIButton) {
