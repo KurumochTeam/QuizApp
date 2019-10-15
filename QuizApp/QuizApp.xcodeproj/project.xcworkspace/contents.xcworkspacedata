@@ -1,6 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:../QuizApp/Libraries"
+      name = "Libraries">
+      <Group
+         location = "group:Rswift"
+         name = "Rswift">
+         <Group
+            location = "group:Rswift.framework"
+            name = "Rswift.framework">
+            <FileRef
+               location = "group:Rswift">
+            </FileRef>
+            <Group
+               location = "group:Headers"
+               name = "Headers">
+               <FileRef
+                  location = "group:Rswift-Swift.h">
+               </FileRef>
+               <FileRef
+                  location = "group:Rswift.h">
+               </FileRef>
+            </Group>
+            <Group
+               location = "group:Modules"
+               name = "Modules">
+               <FileRef
+                  location = "group:module.modulemap">
+               </FileRef>
+               <Group
+                  location = "group:Rswift.swiftmodule"
+                  name = "Rswift.swiftmodule">
+                  <FileRef
+                     location = "group:arm64-apple-ios.swiftdoc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:i386.swiftmodule">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x86_64-apple-ios-simulator.swiftdoc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x86_64-apple-ios-simulator.swiftmodule">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x86_64.swiftdoc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arm64.swiftmodule">
+                  </FileRef>
+                  <FileRef
+                     location = "group:x86_64.swiftmodule">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arm.swiftdoc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:armv7-apple-ios.swiftmodule">
+                  </FileRef>
+                  <FileRef
+                     location = "group:i386-apple-ios-simulator.swiftmodule">
+                  </FileRef>
+                  <FileRef
+                     location = "group:i386.swiftdoc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arm64-apple-ios.swiftmodule">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arm.swiftmodule">
+                  </FileRef>
+                  <FileRef
+                     location = "group:armv7.swiftdoc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:arm64.swiftdoc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:armv7-apple-ios.swiftdoc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:i386-apple-ios-simulator.swiftdoc">
+                  </FileRef>
+                  <FileRef
+                     location = "group:armv7.swiftmodule">
+                  </FileRef>
+               </Group>
+            </Group>
+            <FileRef
+               location = "group:Info.plist">
+            </FileRef>
+         </Group>
+      </Group>
+   </Group>
    <FileRef
       location = "self:QuizApp.xcodeproj">
    </FileRef>
