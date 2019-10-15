@@ -10,7 +10,6 @@
 		1F01D25A2348B51A00F78484 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2592348B51A00F78484 /* MenuButton.swift */; };
 		1F01D25F2348DC5D00F78484 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D25E2348DC5D00F78484 /* NibLoadable.swift */; };
 		1F01D2612348DCD800F78484 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2602348DCD800F78484 /* NibOwnerLoadable.swift */; };
-		1F01D2632348F78A00F78484 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2622348F78A00F78484 /* UIColorExtension.swift */; };
 		1F01EDF4234684CA006245A3 /* MenuButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F01EDF3234684CA006245A3 /* MenuButton.xib */; };
 		1FF939042354FC92000C467A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FF939032354FC91000C467A /* Localizable.strings */; };
 		1FF939062354FD8D000C467A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF939052354FD8D000C467A /* StringExtension.swift */; };
@@ -47,7 +46,6 @@
 		1F01D2592348B51A00F78484 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		1F01D25E2348DC5D00F78484 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		1F01D2602348DCD800F78484 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
-		1F01D2622348F78A00F78484 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = QuizApp/Resources/UIColorExtension.swift; sourceTree = SOURCE_ROOT; };
 		1F01EDF3234684CA006245A3 /* MenuButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuButton.xib; sourceTree = "<group>"; };
 		1FF939032354FC91000C467A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		1FF939052354FD8D000C467A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = QuizApp/Resources/StringExtension.swift; sourceTree = SOURCE_ROOT; };
@@ -218,7 +216,7 @@
 		92AB82AD2340E54300EF700A /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				1F01D2622348F78A00F78484 /* UIColorExtension.swift */,
+				1F01D25D2348DC3F00F78484 /* Reusable */,
 				1FF939052354FD8D000C467A /* StringExtension.swift */,
 			);
 			path = Misc;
@@ -235,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				1F01D266234911E200F78484 /* Controller */,
-				1F01D25D2348DC3F00F78484 /* Reusable */,
 				1F01EDF223468484006245A3 /* MenuButton */,
 			);
 			path = "Common Views";
@@ -393,7 +390,6 @@
 				1F01D25A2348B51A00F78484 /* MenuButton.swift in Sources */,
 				92AB82802340E3BA00EF700A /* QuizApp.xcdatamodeld in Sources */,
 				92AB82782340E3BA00EF700A /* SceneDelegate.swift in Sources */,
-				1F01D2632348F78A00F78484 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

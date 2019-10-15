@@ -9,9 +9,9 @@
 import UIKit
 
 final class MenuButton: UIView, NibOwnerLoadable {
-    @IBOutlet private weak var title: UILabel!
-    @IBOutlet private weak var imageView: UIImageView!
-    @IBOutlet private weak var containerView: UIView!
+    @IBOutlet private var titleLabel: UILabel!
+    @IBOutlet private var imageView: UIImageView!
+    @IBOutlet private var containerView: UIView!
     
     var onTapAction: (() -> ())?
     
@@ -32,11 +32,11 @@ final class MenuButton: UIView, NibOwnerLoadable {
     }
     
     func configure(with title: String, and image: Image) {
-        self.title.text = title
+        self.titleLabel.text = title
         imageView.image = UIImage(systemName: image.rawValue)
     }
     
-    @IBAction func didTapButton(_ sender: UIButton) {
+    @IBAction private func didTapButton(_ sender: UIButton) {
         onTapAction?()
     }
 }
@@ -76,8 +76,8 @@ private extension MenuButton {
         shadowLayer.cornerRadius = containerView.layer.cornerRadius
         
         shadowLayer.shadowOpacity = 1.0
-        shadowLayer.backgroundColor = UIColor.violetMain.cgColor
-        shadowLayer.shadowColor = UIColor.violetMain.cgColor
+        shadowLayer.backgroundColor = UIColor(named: "violet-main")?.cgColor
+        shadowLayer.shadowColor = UIColor(named: "violet-main")?.cgColor
         shadowLayer.shadowOffset = LayerConstants.shadowOffset
         shadowLayer.shadowRadius = LayerConstants.shadowRadius
         shadowLayer.masksToBounds = false

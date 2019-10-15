@@ -17,7 +17,6 @@ final class MainMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureButtons()
     }
     
@@ -26,20 +25,19 @@ final class MainMenuViewController: UIViewController {
         rankingsMenuButton.configure(with: "Rankings".localized, and: .rankings)
         settingsMenuButton.configure(with: "Settings".localized, and: .settings)
         
-        let presenter = self.presenter
-        playMenuButtom.onTapAction = { presenter?.onPlayPressed() }
-        rankingsMenuButton.onTapAction = { presenter?.onRankingsPressed() }
-        settingsMenuButton.onTapAction = { presenter?.onSettingsPressed() }
+        playMenuButtom.onTapAction = presenter?.onPlayPressed
+        rankingsMenuButton.onTapAction = presenter?.onRankingsPressed
+        settingsMenuButton.onTapAction = presenter?.onSettingsPressed
     }
 }
 
 extension MainMenuViewController: MainMenuView {
     func showGameTypes() {
-        // todo
+        // TODO: Implement in task-1
     }
     
     func hideGameTypes() {
-        // todo
+        // TODO: Implement in task-1
     }
 }
 
