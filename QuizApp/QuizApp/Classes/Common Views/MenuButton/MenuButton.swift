@@ -78,8 +78,8 @@ private extension MenuButton {
         shadowLayer.cornerRadius = containerView.layer.cornerRadius
         
         shadowLayer.shadowOpacity = 1.0
-        shadowLayer.backgroundColor = UIColor(named: "violet-main")?.cgColor
-        shadowLayer.shadowColor = UIColor(named: "violet-main")?.cgColor
+        shadowLayer.backgroundColor = R.color.violetMain()?.cgColor
+        shadowLayer.shadowColor = R.color.violetMain()?.cgColor
         shadowLayer.shadowOffset = LayerConstants.shadowOffset
         shadowLayer.shadowRadius = LayerConstants.shadowRadius
         shadowLayer.masksToBounds = false

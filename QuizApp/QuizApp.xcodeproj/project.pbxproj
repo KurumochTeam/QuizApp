@@ -7,16 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FF938F7235106C1000C467A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF938F6235106C1000C467A /* R.generated.swift */; };
-		926D1CEB2351C201006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
-		926D1CF42351C84E006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
-		926D1CF62351C8C8006DAAE8 /* Rswift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1F01D25A2348B51A00F78484 /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2592348B51A00F78484 /* MenuButton.swift */; };
 		1F01D25F2348DC5D00F78484 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D25E2348DC5D00F78484 /* NibLoadable.swift */; };
 		1F01D2612348DCD800F78484 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2602348DCD800F78484 /* NibOwnerLoadable.swift */; };
 		1F01EDF4234684CA006245A3 /* MenuButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F01EDF3234684CA006245A3 /* MenuButton.xib */; };
+		1FF938F7235106C1000C467A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF938F6235106C1000C467A /* R.generated.swift */; };
 		1FF939042354FC92000C467A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FF939032354FC91000C467A /* Localizable.strings */; };
-		1FF939062354FD8D000C467A /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF939052354FD8D000C467A /* StringExtension.swift */; };
+		926D1CEB2351C201006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
+		926D1CF42351C84E006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
+		926D1CF62351C8C8006DAAE8 /* Rswift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		92AB82762340E3BA00EF700A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82752340E3BA00EF700A /* AppDelegate.swift */; };
 		92AB82782340E3BA00EF700A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82772340E3BA00EF700A /* SceneDelegate.swift */; };
 		92AB82802340E3BA00EF700A /* QuizApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92AB827E2340E3BA00EF700A /* QuizApp.xcdatamodeld */; };
@@ -60,14 +59,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1FF938F6235106C1000C467A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
-		926D1CE82351BF58006DAAE8 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		1F01D2592348B51A00F78484 /* MenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		1F01D25E2348DC5D00F78484 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		1F01D2602348DCD800F78484 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		1F01EDF3234684CA006245A3 /* MenuButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuButton.xib; sourceTree = "<group>"; };
+		1FF938F6235106C1000C467A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		1FF939032354FC91000C467A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		1FF939052354FD8D000C467A /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = QuizApp/Resources/StringExtension.swift; sourceTree = SOURCE_ROOT; };
+		926D1CE82351BF58006DAAE8 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		92AB82722340E3BA00EF700A /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AB82752340E3BA00EF700A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92AB82772340E3BA00EF700A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,22 +111,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FF938F5235106C1000C467A /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-				1FF938F6235106C1000C467A /* R.generated.swift */,
-			);
-			path = Generated;
-			sourceTree = "<group>";
-		};
-		926D1CE72351BF58006DAAE8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				926D1CE82351BF58006DAAE8 /* Rswift.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		1F01D25D2348DC3F00F78484 /* Reusable */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +134,22 @@
 				1F01D2592348B51A00F78484 /* MenuButton.swift */,
 			);
 			path = MenuButton;
+			sourceTree = "<group>";
+		};
+		1FF938F5235106C1000C467A /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				1FF938F6235106C1000C467A /* R.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		926D1CE72351BF58006DAAE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				926D1CE82351BF58006DAAE8 /* Rswift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		92AB82692340E3BA00EF700A = {
@@ -256,7 +254,6 @@
 			isa = PBXGroup;
 			children = (
 				1F01D25D2348DC3F00F78484 /* Reusable */,
-				1FF939052354FD8D000C467A /* StringExtension.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -446,7 +443,6 @@
 			files = (
 				92AB82B22340E5AD00EF700A /* MainMenuViewController.swift in Sources */,
 				1F01D2612348DCD800F78484 /* NibOwnerLoadable.swift in Sources */,
-				1FF939062354FD8D000C467A /* StringExtension.swift in Sources */,
 				92AB82762340E3BA00EF700A /* AppDelegate.swift in Sources */,
 				1F01D25F2348DC5D00F78484 /* NibLoadable.swift in Sources */,
 				92AB82B52340E5D500EF700A /* MainMenuPresenter.swift in Sources */,
