@@ -9,52 +9,45 @@
 import UIKit
 
 final class MainMenuViewController: UIViewController {
-    @IBOutlet private weak var playMenuButtom: MenuButton!
-    @IBOutlet private weak var rankingsMenuButton: MenuButton!
-    @IBOutlet private weak var settingsMenuButton: MenuButton!
+    @IBOutlet private var playMenuButtom: MenuButton!
+    @IBOutlet private var rankingsMenuButton: MenuButton!
+    @IBOutlet private var settingsMenuButton: MenuButton!
     
     var presenter: MainMenuPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configureButtons()
     }
     
     private func configureButtons() {
-        playMenuButtom.configure(with: "Play", and: .play)
-        rankingsMenuButton.configure(with: "Rankings", and: .rankings)
-        settingsMenuButton.configure(with: "Settings", and: .settings)
+        playMenuButtom.configure(
+            title: R.string.localizable.play(),
+            image: .play,
+            tapAction: presenter?.onPlayPressed
+        )
         
-        playMenuButtom.delegate = self
-        rankingsMenuButton.delegate = self
-        settingsMenuButton.delegate = self
+        rankingsMenuButton.configure(
+            title: R.string.localizable.rankings(),
+            image: .rankings,
+            tapAction: presenter?.onRankingsPressed
+        )
+        
+        settingsMenuButton.configure(
+            title: R.string.localizable.settings(),
+            image: .settings,
+            tapAction: presenter?.onSettingsPressed
+        )
     }
 }
 
 extension MainMenuViewController: MainMenuView {
     func showGameTypes() {
-        // todo
+        // TODO: Implement in task-1
     }
     
     func hideGameTypes() {
-        // todo
-    }
-}
-
-extension MainMenuViewController: ButtonDelegate {
-    func didButtonTap(_ button: MenuButton) {
-        if button == playMenuButtom {
-            presenter?.onStartPressed()
-        }
-        
-        if button == rankingsMenuButton {
-            presenter?.onRankingsPressed()
-        }
-        
-        if button == settingsMenuButton {
-            presenter?.onSettingsPressed() 
-        }
+        // TODO: Implement in task-1
     }
 }
 

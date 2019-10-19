@@ -11,7 +11,7 @@ import Foundation
 class MainMenuDefaultPresenter{}
 
 protocol MainMenuPresenter {
-    func onStartPressed()
+    func onPlayPressed()
     func onStartOnLivesGamePressed()
     func onStartOnTimeGamePressed()
     func onRankingsPressed()
