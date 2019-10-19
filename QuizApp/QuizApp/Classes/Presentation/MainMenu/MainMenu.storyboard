@@ -37,6 +37,31 @@
                                     <constraint firstItem="FvI-Pu-LSe" firstAttribute="height" secondItem="Gun-WY-4ka" secondAttribute="height" id="Nje-8D-eJu"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qy-dW-PJ6">
+                                <rect key="frame" x="110" y="169" width="195" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="S">
+                                        <attributes>
+                                            <color key="NSColor" red="0.87843137250000003" green="0.86274509799999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="56" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="QUIZ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.41458529230000002" green="0.21438083050000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="56" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Y">
+                                        <attributes>
+                                            <color key="NSColor" red="0.87843137250000003" green="0.86274509799999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="56" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -48,9 +73,11 @@
                         <viewLayoutGuide key="safeArea" id="5aO-zu-gHq"/>
                     </view>
                     <connections>
+                        <outlet property="buttonsStackView" destination="GzC-kW-MAI" id="scf-vY-2c3"/>
                         <outlet property="playMenuButtom" destination="Gun-WY-4ka" id="WI3-bI-ZMP"/>
                         <outlet property="rankingsMenuButton" destination="kaT-MJ-bbZ" id="jFq-xk-yKA"/>
                         <outlet property="settingsMenuButton" destination="FvI-Pu-LSe" id="byn-5v-Iv3"/>
+                        <outlet property="titleLabel" destination="3Qy-dW-PJ6" id="P81-Qp-jCL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWh-fB-igT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
