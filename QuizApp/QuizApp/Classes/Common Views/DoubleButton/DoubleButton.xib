@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoubleButton" customModule="QuizApp" customModuleProvider="target">
+            <connections>
+                <outlet property="leftImageView" destination="MXK-R5-GKm" id="Ocd-LU-HMr"/>
+                <outlet property="leftView" destination="7ii-bl-cqq" id="5jd-mK-5b4"/>
+                <outlet property="menuButton" destination="zlH-jU-s5B" id="MJn-tQ-Q57"/>
+                <outlet property="rightImageView" destination="Bdn-rZ-rWB" id="rK1-d9-Kce"/>
+                <outlet property="rightView" destination="F2l-pP-nRd" id="yTJ-2u-zb0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="457" height="214"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7ii-bl-cqq" userLabel="LeftView">
+                    <rect key="frame" x="0.0" y="0.0" width="214" height="214"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MXK-R5-GKm">
+                            <rect key="frame" x="53.5" y="53.5" width="107" height="107"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="MXK-R5-GKm" secondAttribute="height" id="ydE-el-f8c"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" name="Main Pink"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="MXK-R5-GKm" firstAttribute="height" secondItem="7ii-bl-cqq" secondAttribute="height" multiplier="0.5" id="8p0-l8-j85"/>
+                        <constraint firstItem="MXK-R5-GKm" firstAttribute="centerX" secondItem="7ii-bl-cqq" secondAttribute="centerX" id="O4w-4b-9H1"/>
+                        <constraint firstAttribute="width" secondItem="7ii-bl-cqq" secondAttribute="height" id="pGC-m7-l6O"/>
+                        <constraint firstItem="MXK-R5-GKm" firstAttribute="centerY" secondItem="7ii-bl-cqq" secondAttribute="centerY" id="xpD-j5-Q8A"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="9uS-Qg-KYU" appends="YES" id="81n-2h-ZkK"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2l-pP-nRd" userLabel="RightView">
+                    <rect key="frame" x="243" y="0.0" width="214" height="214"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bdn-rZ-rWB">
+                            <rect key="frame" x="53.5" y="53.5" width="107" height="107"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Bdn-rZ-rWB" secondAttribute="height" id="s3g-a7-Ckt"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" name="Main Pink"/>
+                    <constraints>
+                        <constraint firstItem="Bdn-rZ-rWB" firstAttribute="centerX" secondItem="F2l-pP-nRd" secondAttribute="centerX" id="Gmv-Wo-6SN"/>
+                        <constraint firstItem="Bdn-rZ-rWB" firstAttribute="centerY" secondItem="F2l-pP-nRd" secondAttribute="centerY" id="O2I-Ad-5SQ"/>
+                        <constraint firstAttribute="width" secondItem="F2l-pP-nRd" secondAttribute="height" id="V2q-BF-bHg"/>
+                        <constraint firstItem="Bdn-rZ-rWB" firstAttribute="height" secondItem="F2l-pP-nRd" secondAttribute="height" multiplier="0.5" id="w4a-l4-ujR"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="eZ7-ya-PUH" appends="YES" id="wZv-xY-uyH"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlH-jU-s5B" customClass="MenuButton" customModule="QuizApp" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="457" height="214"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                            <real key="value" value="36"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="floatingShadowRelativeWidth">
+                            <real key="value" value="0.80000000000000004"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7ii-bl-cqq" secondAttribute="bottom" id="2gq-6o-Uvw"/>
+                <constraint firstAttribute="trailing" secondItem="F2l-pP-nRd" secondAttribute="trailing" id="2iP-Ch-1Jw"/>
+                <constraint firstItem="zlH-jU-s5B" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="EBd-oU-f0V"/>
+                <constraint firstAttribute="top" secondItem="F2l-pP-nRd" secondAttribute="top" id="FOo-DV-Hhd"/>
+                <constraint firstItem="F2l-pP-nRd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="centerX" priority="999" id="KgG-G9-9Ua"/>
+                <constraint firstItem="7ii-bl-cqq" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="centerX" priority="999" id="XW0-eM-jRj"/>
+                <constraint firstAttribute="top" secondItem="7ii-bl-cqq" secondAttribute="top" id="fHN-Us-8P1"/>
+                <constraint firstItem="zlH-jU-s5B" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="fMe-ge-DXh"/>
+                <constraint firstAttribute="leading" secondItem="7ii-bl-cqq" secondAttribute="leading" id="l76-3E-cPh"/>
+                <constraint firstAttribute="bottom" secondItem="F2l-pP-nRd" secondAttribute="bottom" id="ned-pD-vQB"/>
+                <constraint firstItem="zlH-jU-s5B" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oFM-dx-ecO"/>
+                <constraint firstItem="zlH-jU-s5B" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="rH1-01-jrt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="106.5217391304348" y="-140.625"/>
+        </view>
+        <tapGestureRecognizer id="9uS-Qg-KYU">
+            <connections>
+                <action selector="didTapLeftButton:" destination="-1" id="ieY-rE-nFe"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="eZ7-ya-PUH">
+            <connections>
+                <action selector="didTapRightButton:" destination="-1" id="ACI-tK-hcg"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <namedColor name="Main Pink">
+            <color red="0.36500000953674316" green="0.27799999713897705" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
