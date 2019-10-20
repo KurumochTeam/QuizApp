@@ -23,19 +23,19 @@ final class MainMenuViewController: UIViewController {
     private func configureButtons() {
         playMenuButtom.configure(
             title: R.string.localizable.play(),
-            image: .play,
+            image: UIImage(systemName: "gamecontroller.fill"),
             tapAction: presenter?.onPlayPressed
         )
         
         rankingsMenuButton.configure(
             title: R.string.localizable.rankings(),
-            image: .rankings,
+            image: UIImage(systemName: "rosette"),
             tapAction: presenter?.onRankingsPressed
         )
         
         settingsMenuButton.configure(
             title: R.string.localizable.settings(),
-            image: .settings,
+            image: UIImage(systemName: "gear"),
             tapAction: presenter?.onSettingsPressed
         )
     }
