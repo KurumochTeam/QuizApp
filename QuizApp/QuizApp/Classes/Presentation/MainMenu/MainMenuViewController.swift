@@ -9,7 +9,7 @@
 import UIKit
 
 final class MainMenuViewController: UIViewController {
-    @IBOutlet private var playMenuButtom: MenuButton!
+    @IBOutlet private var playMenuButtom: DoubleButton!
     @IBOutlet private var rankingsMenuButton: MenuButton!
     @IBOutlet private var settingsMenuButton: MenuButton!
     
@@ -21,10 +21,13 @@ final class MainMenuViewController: UIViewController {
     }
     
     private func configureButtons() {
-        playMenuButtom.configure(
-            title: R.string.localizable.play(),
-            image: .play,
-            tapAction: presenter?.onPlayPressed
+        playMenuButtom.cofigure(
+            text: "TEST",
+            leftImage: .actions,
+            rightImage: .checkmark,
+            handlers: .init(
+                didTapLeftButton: {},
+                didTapRightButton: {})
         )
         
         rankingsMenuButton.configure(

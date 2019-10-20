@@ -18,7 +18,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="GzC-kW-MAI">
                                 <rect key="frame" x="41.5" y="273.5" width="331" height="450"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gun-WY-4ka" customClass="MenuButton" customModule="QuizApp" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gun-WY-4ka" customClass="DoubleButton" customModule="QuizApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="331" height="112.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>

@@ -38,6 +38,11 @@ class MenuButton: UIView, NibOwnerLoadable {
         onTapAction = tapAction
     }
     
+    func setAlphaOfSubviews(_ value: CGFloat) {
+        imageView.alpha = value
+        titleLabel.alpha = value
+    }
+    
     @IBAction private func didTapButton(_ sender: UIButton) {
         onTapAction?()
     }
