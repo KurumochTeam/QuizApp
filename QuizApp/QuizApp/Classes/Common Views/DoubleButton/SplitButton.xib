@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoubleButton" customModule="QuizApp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplitButton" customModule="QuizApp" customModuleProvider="target">
             <connections>
                 <outlet property="leftImageView" destination="MXK-R5-GKm" id="Ocd-LU-HMr"/>
                 <outlet property="leftView" destination="7ii-bl-cqq" id="5jd-mK-5b4"/>

@@ -9,7 +9,7 @@
 import UIKit
 
 final class MainMenuViewController: UIViewController {
-    @IBOutlet private var playMenuButtom: DoubleButton!
+    @IBOutlet private var playMenuButtom: SplitButton!
     @IBOutlet private var rankingsMenuButton: MenuButton!
     @IBOutlet private var settingsMenuButton: MenuButton!
     

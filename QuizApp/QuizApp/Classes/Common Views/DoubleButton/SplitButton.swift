@@ -1,5 +1,5 @@
 //
-//  DoubleButton.swift
+//  SplitButton.swift
 //  QuizApp
 //
 //  Created by Денис on 12.10.2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DoubleButton: UIView, NibOwnerLoadable {
+class SplitButton: UIView, NibOwnerLoadable {
     @IBOutlet private var leftView: UIView!
     @IBOutlet private var rightView: UIView!
     @IBOutlet private var leftImageView: UIImageView!
@@ -16,8 +16,8 @@ class DoubleButton: UIView, NibOwnerLoadable {
 
     @IBOutlet private var menuButton: MenuButton!
 
-    var didTapLeftButton: (() -> Void)?
-    var didTapRightButton: (() -> Void)?
+    private var didTapLeftButton: (() -> Void)?
+    private var didTapRightButton: (() -> Void)?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -48,7 +48,7 @@ class DoubleButton: UIView, NibOwnerLoadable {
     }
 }
 
-private extension DoubleButton {
+private extension SplitButton {
     var inactivityTimer: Timer {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { [weak self] _ in
         }
