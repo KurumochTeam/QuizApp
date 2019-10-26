@@ -8,7 +8,35 @@
 
 import Foundation
 
-class MainMenuDefaultPresenter{}
+final class MainMenuDefaultPresenter: MainMenuPresenter, Presentable {
+    lazy var dependency: Void = deferred()
+    lazy var view: MainMenuView = deferred()
+    
+    init(view: MainMenuView, dependency: ()) {
+        self.view = view
+        self.dependency = dependency
+    }
+    
+    func onPlayPressed() {
+        view.showGameTypes()
+    }
+    
+    func onStartOnLivesGamePressed() {
+        
+    }
+    
+    func onStartOnTimeGamePressed() {
+        
+    }
+    
+    func onRankingsPressed() {
+        
+    }
+    
+    func onSettingsPressed() {
+        
+    }
+}
 
 protocol MainMenuPresenter {
     func onPlayPressed()

@@ -17,7 +17,7 @@ final class MainMenuViewController: UIViewController {
     
     private var backgroundLayer: CALayer!
     
-    var presenter: MainMenuPresenter?
+    lazy var presenter: MainMenuPresenter = deferred()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,20 +34,28 @@ final class MainMenuViewController: UIViewController {
         playMenuButtom.configure(
             title: R.string.localizable.play(),
             image: UIImage(systemName: "gamecontroller.fill"),
-            tapAction: presenter?.onPlayPressed
+            tapAction: presenter.onPlayPressed
         )
         
         rankingsMenuButton.configure(
             title: R.string.localizable.rankings(),
             image: UIImage(systemName: "rosette"),
-            tapAction: presenter?.onRankingsPressed
+            tapAction: presenter.onRankingsPressed
         )
         
         settingsMenuButton.configure(
             title: R.string.localizable.settings(),
             image: UIImage(systemName: "gear"),
-            tapAction: presenter?.onSettingsPressed
+            tapAction: presenter.onSettingsPressed
         )
+    }
+}
+
+extension MainMenuViewController: Viewable {
+    static func instantiate() -> MainMenuViewController {
+        return R.storyboard.mainMenu().instantiateViewController(
+            withIdentifier: String(describing: MainMenuViewController.self)
+        ) as! MainMenuViewController
     }
 }
 
