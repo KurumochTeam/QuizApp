@@ -9,8 +9,8 @@
 import Foundation
 
 final class MainMenuDefaultPresenter: MainMenuPresenter, Presentable {
-    lazy var dependency: Void = deferred()
-    lazy var view: MainMenuView = deferred()
+    let dependency: Void
+    let view: MainMenuView
     
     init(view: MainMenuView, dependency: ()) {
         self.view = view

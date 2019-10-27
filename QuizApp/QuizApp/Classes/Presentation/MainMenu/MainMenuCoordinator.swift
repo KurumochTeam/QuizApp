@@ -9,44 +9,46 @@
 import UIKit
 
 class MainMenuCoordinator: Coordinator {
-    private let transitionHandler: UINavigationController
+    private let navigationController: UINavigationController
     
-    init(transitionHandler: UINavigationController) {
-        self.transitionHandler = transitionHandler
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
     }
     
     func start() {
         showMainMenu()
     }
-    
-    private func showMainMenu() {
+}
+
+private extension MainMenuCoordinator {
+    func showMainMenu() {
         let vc = BasicFactory.createScreen(
             viewType: MainMenuViewController.self,
             presenterType: MainMenuDefaultPresenter.self,
             dependecy: ()
         )
         
-        transitionHandler.setViewControllers([vc], animated: false)
+        navigationController.setViewControllers([vc], animated: false)
     }
     
-    private func startGameOnLives() {
+    func startGameOnLives() {
         // start GameCoordinator
     }
     
-    private func startGameOnTime() {
+    func startGameOnTime() {
         // start GameCoordinator
     }
     
-    private func showSettings() {
+    func showSettings() {
         // assemble and show settings
     }
     
-    private func showRankings() {
+    func showRankings() {
         // assemble and show rankings
     }
 }
 
-protocol MainMenuOutput {
+protocol MainMenuActions {
     var onStartGameOnLives: () -> () { get set }
     var onStartGameOnTime: () -> () { get set }
     var onShowSettings: () -> () { get set }
