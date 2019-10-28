@@ -60,7 +60,7 @@ extension MainMenuViewController: Viewable {
 }
 
 private extension MainMenuViewController {
-    struct LayerConstants {
+    enum LayerConstants {
         static let backgroundRotation = 0.42 * CGFloat.pi
         static let additionalOffset = CGFloat(-40)
     }
