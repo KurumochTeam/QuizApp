@@ -31,9 +31,9 @@ class MenuButton: UIView, NibOwnerLoadable {
         addFloatingShadow()
     }
     
-    func configure(title: String, image: Image, tapAction: (() -> ())?) {
+    func configure(title: String, image: UIImage?, tapAction: (() -> ())?) {
         self.titleLabel.text = title
-        imageView.image = UIImage(systemName: image.rawValue)
+        imageView.image = image
         
         onTapAction = tapAction
     }
@@ -45,14 +45,6 @@ class MenuButton: UIView, NibOwnerLoadable {
     
     @IBAction private func didTapButton(_ sender: UIButton) {
         onTapAction?()
-    }
-}
-
-extension MenuButton {
-    enum Image: String {
-        case play = "gamecontroller.fill"
-        case rankings = "rosette"
-        case settings = "gear"
     }
 }
 

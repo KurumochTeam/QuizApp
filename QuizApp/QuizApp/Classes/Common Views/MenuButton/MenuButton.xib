@@ -75,7 +75,7 @@
     <resources>
         <image name="rosette" catalog="system" width="50" height="64"/>
         <namedColor name="violet-main">
-            <color red="0.36470588235294116" green="0.27843137254901962" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.36500000953674316" green="0.27799999713897705" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

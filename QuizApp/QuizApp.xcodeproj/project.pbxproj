@@ -11,13 +11,18 @@
 		1F01D25F2348DC5D00F78484 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D25E2348DC5D00F78484 /* NibLoadable.swift */; };
 		1F01D2612348DCD800F78484 /* NibOwnerLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01D2602348DCD800F78484 /* NibOwnerLoadable.swift */; };
 		1F01EDF4234684CA006245A3 /* MenuButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F01EDF3234684CA006245A3 /* MenuButton.xib */; };
+		1F21F5072362256500F04575 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F21F5062362256500F04575 /* Presenter.swift */; };
+		1FF594CB235CC5CD004E12F1 /* MainMenuCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF594CA235CC5CD004E12F1 /* MainMenuCoordinator.swift */; };
+		1FF594CE235CC7B0004E12F1 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF594CD235CC7B0004E12F1 /* Coordinator.swift */; };
+		1FF594D0235CD823004E12F1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF594CF235CD823004E12F1 /* View.swift */; };
+		1FF8F1E8236475B6006CAE1A /* ScreenFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF8F1E7236475B6006CAE1A /* ScreenFactory.swift */; };
+		1FF8F1EA2364809A006CAE1A /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF8F1E92364809A006CAE1A /* Mock.swift */; };
 		1FF938F7235106C1000C467A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF938F6235106C1000C467A /* R.generated.swift */; };
 		1FF939042354FC92000C467A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FF939032354FC91000C467A /* Localizable.strings */; };
 		926D1CEB2351C201006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
 		926D1CF42351C84E006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
 		926D1CF62351C8C8006DAAE8 /* Rswift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		92AB82762340E3BA00EF700A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82752340E3BA00EF700A /* AppDelegate.swift */; };
-		92AB82782340E3BA00EF700A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AB82772340E3BA00EF700A /* SceneDelegate.swift */; };
 		92AB82802340E3BA00EF700A /* QuizApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 92AB827E2340E3BA00EF700A /* QuizApp.xcdatamodeld */; };
 		92AB82822340E3BF00EF700A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92AB82812340E3BF00EF700A /* Assets.xcassets */; };
 		92AB82852340E3BF00EF700A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92AB82832340E3BF00EF700A /* LaunchScreen.storyboard */; };
@@ -66,12 +71,17 @@
 		1F01D25E2348DC5D00F78484 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		1F01D2602348DCD800F78484 /* NibOwnerLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibOwnerLoadable.swift; sourceTree = "<group>"; };
 		1F01EDF3234684CA006245A3 /* MenuButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuButton.xib; sourceTree = "<group>"; };
+		1F21F5062362256500F04575 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		1FF594CA235CC5CD004E12F1 /* MainMenuCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuCoordinator.swift; sourceTree = "<group>"; };
+		1FF594CD235CC7B0004E12F1 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		1FF594CF235CD823004E12F1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		1FF8F1E7236475B6006CAE1A /* ScreenFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenFactory.swift; sourceTree = "<group>"; };
+		1FF8F1E92364809A006CAE1A /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		1FF938F6235106C1000C467A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		1FF939032354FC91000C467A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		926D1CE82351BF58006DAAE8 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		92AB82722340E3BA00EF700A /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AB82752340E3BA00EF700A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92AB82772340E3BA00EF700A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		92AB827F2340E3BA00EF700A /* QuizApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QuizApp.xcdatamodel; sourceTree = "<group>"; };
 		92AB82812340E3BF00EF700A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92AB82842340E3BF00EF700A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -126,13 +136,6 @@
 			path = Reusable;
 			sourceTree = "<group>";
 		};
-		1F01D266234911E200F78484 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		1F01EDF223468484006245A3 /* MenuButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +143,17 @@
 				1F01D2592348B51A00F78484 /* MenuButton.swift */,
 			);
 			path = MenuButton;
+			sourceTree = "<group>";
+		};
+		1FF594CC235CC6F6004E12F1 /* Architacture */ = {
+			isa = PBXGroup;
+			children = (
+				1FF594CD235CC7B0004E12F1 /* Coordinator.swift */,
+				1FF594CF235CD823004E12F1 /* View.swift */,
+				1F21F5062362256500F04575 /* Presenter.swift */,
+				1FF8F1E7236475B6006CAE1A /* ScreenFactory.swift */,
+			);
+			path = Architacture;
 			sourceTree = "<group>";
 		};
 		1FF938F5235106C1000C467A /* Generated */ = {
@@ -186,7 +200,6 @@
 				92AB82A92340E4D100EF700A /* Classes */,
 				92AB82A82340E43700EF700A /* Resources */,
 				92AB82752340E3BA00EF700A /* AppDelegate.swift */,
-				92AB82772340E3BA00EF700A /* SceneDelegate.swift */,
 			);
 			path = QuizApp;
 			sourceTree = "<group>";
@@ -224,6 +237,7 @@
 		92AB82A92340E4D100EF700A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1FF594CC235CC6F6004E12F1 /* Architacture */,
 				92AB82AF2340E56600EF700A /* Common Views */,
 				92AB82AE2340E54800EF700A /* Mapping */,
 				92AB82AD2340E54300EF700A /* Misc */,
@@ -261,6 +275,7 @@
 			children = (
 				92DD01CF2351F514002B753A /* StringExtension.swift */,
 				1F01D25D2348DC3F00F78484 /* Reusable */,
+				1FF8F1E92364809A006CAE1A /* Mock.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -288,6 +303,7 @@
 				92AB82B12340E5AD00EF700A /* MainMenuViewController.swift */,
 				92AB82B42340E5D500EF700A /* MainMenuPresenter.swift */,
 				92AB82B62340E5EF00EF700A /* MainMenu.storyboard */,
+				1FF594CA235CC5CD004E12F1 /* MainMenuCoordinator.swift */,
 			);
 			path = MainMenu;
 			sourceTree = "<group>";
@@ -461,14 +477,19 @@
 			files = (
 				92AB82B22340E5AD00EF700A /* MainMenuViewController.swift in Sources */,
 				1F01D2612348DCD800F78484 /* NibOwnerLoadable.swift in Sources */,
+				1FF8F1E8236475B6006CAE1A /* ScreenFactory.swift in Sources */,
 				92AB82762340E3BA00EF700A /* AppDelegate.swift in Sources */,
 				1F01D25F2348DC5D00F78484 /* NibLoadable.swift in Sources */,
 				92AB82B52340E5D500EF700A /* MainMenuPresenter.swift in Sources */,
 				1F01D25A2348B51A00F78484 /* MenuButton.swift in Sources */,
 				92DD01CE2351DE65002B753A /* SplitButton.swift in Sources */,
+				1FF594CE235CC7B0004E12F1 /* Coordinator.swift in Sources */,
+				1FF594CB235CC5CD004E12F1 /* MainMenuCoordinator.swift in Sources */,
+				1FF594D0235CD823004E12F1 /* View.swift in Sources */,
 				92AB82802340E3BA00EF700A /* QuizApp.xcdatamodeld in Sources */,
-				92AB82782340E3BA00EF700A /* SceneDelegate.swift in Sources */,
 				92DD01D02351F514002B753A /* StringExtension.swift in Sources */,
+				1FF8F1EA2364809A006CAE1A /* Mock.swift in Sources */,
+				1F21F5072362256500F04575 /* Presenter.swift in Sources */,
 				1FF938F7235106C1000C467A /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

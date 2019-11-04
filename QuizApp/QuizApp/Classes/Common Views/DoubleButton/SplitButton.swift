@@ -39,8 +39,8 @@ class SplitButton: UIView, NibOwnerLoadable {
         let didTapRightButton: () -> Void
     }
 
-    func cofigure(text: String, leftImage: UIImage, rightImage: UIImage, handlers: Handlers) {
-        menuButton.configure(title: text, image: .play, tapAction: animateTransition)
+    func cofigure(text: String, mainImage: UIImage?, leftImage: UIImage, rightImage: UIImage, handlers: Handlers) {
+        menuButton.configure(title: text, image: mainImage, tapAction: animateTransition)
         leftImageView.image = leftImage
         rightImageView.image = rightImage
         didTapLeftButton = handlers.didTapLeftButton

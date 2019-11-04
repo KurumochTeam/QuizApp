@@ -32,7 +32,7 @@
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" name="Main Pink"/>
+                    <color key="backgroundColor" name="violet-main"/>
                     <gestureRecognizers/>
                     <constraints>
                         <constraint firstItem="MXK-R5-GKm" firstAttribute="height" secondItem="7ii-bl-cqq" secondAttribute="height" multiplier="0.5" id="8p0-l8-j85"/>
@@ -55,7 +55,7 @@
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" name="Main Pink"/>
+                    <color key="backgroundColor" name="violet-main"/>
                     <constraints>
                         <constraint firstItem="Bdn-rZ-rWB" firstAttribute="centerX" secondItem="F2l-pP-nRd" secondAttribute="centerX" id="Gmv-Wo-6SN"/>
                         <constraint firstItem="Bdn-rZ-rWB" firstAttribute="centerY" secondItem="F2l-pP-nRd" secondAttribute="centerY" id="O2I-Ad-5SQ"/>
@@ -68,7 +68,7 @@
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlH-jU-s5B" customClass="MenuButton" customModule="QuizApp" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="457" height="214"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
                             <real key="value" value="36"/>
@@ -79,7 +79,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="7ii-bl-cqq" secondAttribute="bottom" id="2gq-6o-Uvw"/>
                 <constraint firstAttribute="trailing" secondItem="F2l-pP-nRd" secondAttribute="trailing" id="2iP-Ch-1Jw"/>
@@ -110,8 +110,8 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <namedColor name="Main Pink">
-            <color red="0.36500000953674316" green="0.27799999713897705" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="violet-main">
+            <color red="0.36470588235294116" green="0.27843137254901962" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
