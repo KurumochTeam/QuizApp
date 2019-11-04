@@ -1,7 +1,88 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Ho-ai-OzD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Main Menu View Controller-->
+        <scene sceneID="aif-Sv-gTL">
+            <objects>
+                <viewController storyboardIdentifier="MainMenuViewController" id="9Ho-ai-OzD" customClass="MainMenuViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CxV-TW-Tb2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="GzC-kW-MAI">
+                                <rect key="frame" x="41.5" y="273.5" width="331" height="450"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gun-WY-4ka" customClass="MenuButton" customModule="QuizApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="112.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kaT-MJ-bbZ" customClass="MenuButton" customModule="QuizApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="168.5" width="331" height="112.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FvI-Pu-LSe" customClass="MenuButton" customModule="QuizApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="337.5" width="331" height="112.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gun-WY-4ka" firstAttribute="height" secondItem="GzC-kW-MAI" secondAttribute="height" multiplier="0.25" id="73b-IY-Ksg"/>
+                                    <constraint firstItem="kaT-MJ-bbZ" firstAttribute="height" secondItem="Gun-WY-4ka" secondAttribute="height" id="Ffy-WR-G9I"/>
+                                    <constraint firstItem="FvI-Pu-LSe" firstAttribute="height" secondItem="Gun-WY-4ka" secondAttribute="height" id="Nje-8D-eJu"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Qy-dW-PJ6">
+                                <rect key="frame" x="110" y="169" width="195" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="S">
+                                        <attributes>
+                                            <color key="NSColor" red="0.87843137250000003" green="0.86274509799999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="56" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="QUIZ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.41458529230000002" green="0.21438083050000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="56" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Y">
+                                        <attributes>
+                                            <color key="NSColor" red="0.87843137250000003" green="0.86274509799999999" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="56" name="Avenir-Book"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GzC-kW-MAI" firstAttribute="height" secondItem="5aO-zu-gHq" secondAttribute="height" multiplier="0.55" id="1gU-r9-PZC"/>
+                            <constraint firstItem="GzC-kW-MAI" firstAttribute="centerX" secondItem="5aO-zu-gHq" secondAttribute="centerX" id="5RC-Iq-jIz"/>
+                            <constraint firstItem="GzC-kW-MAI" firstAttribute="width" secondItem="5aO-zu-gHq" secondAttribute="width" multiplier="0.8" id="mch-Jm-tno"/>
+                            <constraint firstItem="GzC-kW-MAI" firstAttribute="centerY" secondItem="5aO-zu-gHq" secondAttribute="centerY" multiplier="1.1" id="vqs-qF-CzE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5aO-zu-gHq"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonsStackView" destination="GzC-kW-MAI" id="scf-vY-2c3"/>
+                        <outlet property="playMenuButtom" destination="Gun-WY-4ka" id="WI3-bI-ZMP"/>
+                        <outlet property="rankingsMenuButton" destination="kaT-MJ-bbZ" id="jFq-xk-yKA"/>
+                        <outlet property="settingsMenuButton" destination="FvI-Pu-LSe" id="byn-5v-Iv3"/>
+                        <outlet property="titleLabel" destination="3Qy-dW-PJ6" id="P81-Qp-jCL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWh-fB-igT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-168" y="86"/>
+        </scene>
+    </scenes>
 </document>
