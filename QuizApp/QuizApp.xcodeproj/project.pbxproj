@@ -19,6 +19,8 @@
 		1FF8F1EA2364809A006CAE1A /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF8F1E92364809A006CAE1A /* Mock.swift */; };
 		1FF938F7235106C1000C467A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF938F6235106C1000C467A /* R.generated.swift */; };
 		1FF939042354FC92000C467A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FF939032354FC91000C467A /* Localizable.strings */; };
+		1FFCFA1923897388009A6F11 /* FloatingShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFCFA1823897388009A6F11 /* FloatingShadowView.swift */; };
+		1FFCFA1B23899182009A6F11 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFCFA1A23899182009A6F11 /* UIViewExtension.swift */; };
 		926D1CEB2351C201006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
 		926D1CF42351C84E006DAAE8 /* Rswift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; };
 		926D1CF62351C8C8006DAAE8 /* Rswift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 926D1CE82351BF58006DAAE8 /* Rswift.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -79,6 +81,8 @@
 		1FF8F1E92364809A006CAE1A /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
 		1FF938F6235106C1000C467A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		1FF939032354FC91000C467A /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		1FFCFA1823897388009A6F11 /* FloatingShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingShadowView.swift; sourceTree = "<group>"; };
+		1FFCFA1A23899182009A6F11 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		926D1CE82351BF58006DAAE8 /* Rswift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rswift.framework; path = Carthage/Build/iOS/Rswift.framework; sourceTree = "<group>"; };
 		92AB82722340E3BA00EF700A /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92AB82752340E3BA00EF700A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +166,14 @@
 				1FF938F6235106C1000C467A /* R.generated.swift */,
 			);
 			path = Generated;
+			sourceTree = "<group>";
+		};
+		1FFCFA1723897291009A6F11 /* FloatingShadowView */ = {
+			isa = PBXGroup;
+			children = (
+				1FFCFA1823897388009A6F11 /* FloatingShadowView.swift */,
+			);
+			path = FloatingShadowView;
 			sourceTree = "<group>";
 		};
 		926D1CE72351BF58006DAAE8 /* Frameworks */ = {
@@ -276,6 +288,7 @@
 				92DD01CF2351F514002B753A /* StringExtension.swift */,
 				1F01D25D2348DC3F00F78484 /* Reusable */,
 				1FF8F1E92364809A006CAE1A /* Mock.swift */,
+				1FFCFA1A23899182009A6F11 /* UIViewExtension.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -290,8 +303,8 @@
 		92AB82AF2340E56600EF700A /* Common Views */ = {
 			isa = PBXGroup;
 			children = (
+				1FFCFA1723897291009A6F11 /* FloatingShadowView */,
 				92DD01C62351DC83002B753A /* DoubleButton */,
-				1F01D266234911E200F78484 /* Controller */,
 				1F01EDF223468484006245A3 /* MenuButton */,
 			);
 			path = "Common Views";
@@ -476,10 +489,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				92AB82B22340E5AD00EF700A /* MainMenuViewController.swift in Sources */,
+				1FFCFA1923897388009A6F11 /* FloatingShadowView.swift in Sources */,
 				1F01D2612348DCD800F78484 /* NibOwnerLoadable.swift in Sources */,
 				1FF8F1E8236475B6006CAE1A /* ScreenFactory.swift in Sources */,
 				92AB82762340E3BA00EF700A /* AppDelegate.swift in Sources */,
 				1F01D25F2348DC5D00F78484 /* NibLoadable.swift in Sources */,
+				1FFCFA1B23899182009A6F11 /* UIViewExtension.swift in Sources */,
 				92AB82B52340E5D500EF700A /* MainMenuPresenter.swift in Sources */,
 				1F01D25A2348B51A00F78484 /* MenuButton.swift in Sources */,
 				92DD01CE2351DE65002B753A /* SplitButton.swift in Sources */,

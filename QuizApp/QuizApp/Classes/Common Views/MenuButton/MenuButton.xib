@@ -24,7 +24,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="329" height="115"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfF-Eh-z2d">
-                            <rect key="frame" x="144" y="0.0" width="30" height="115"/>
+                            <rect key="frame" x="0.0" y="0.0" width="317.5" height="115"/>
                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                             <state key="normal">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -56,6 +56,7 @@
                         <constraint firstItem="bKD-8H-B1g" firstAttribute="height" secondItem="EfF-Eh-z2d" secondAttribute="height" multiplier="0.5" id="abf-r1-e6g"/>
                         <constraint firstItem="bKD-8H-B1g" firstAttribute="centerY" secondItem="EfF-Eh-z2d" secondAttribute="centerY" id="f5s-nW-iuX"/>
                         <constraint firstItem="lzJ-bl-3jP" firstAttribute="centerY" secondItem="EfF-Eh-z2d" secondAttribute="centerY" id="gsg-At-5LZ"/>
+                        <constraint firstItem="EfF-Eh-z2d" firstAttribute="leading" secondItem="dgJ-qE-0K0" secondAttribute="leading" id="ut6-KY-nkA"/>
                         <constraint firstItem="lzJ-bl-3jP" firstAttribute="centerX" secondItem="dgJ-qE-0K0" secondAttribute="centerX" multiplier="1.255" id="yka-hw-tnJ"/>
                     </constraints>
                 </view>
@@ -75,7 +76,7 @@
     <resources>
         <image name="rosette" catalog="system" width="50" height="64"/>
         <namedColor name="violet-main">
-            <color red="0.36500000953674316" green="0.27799999713897705" blue="0.96100002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.36470588235294116" green="0.27843137254901962" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

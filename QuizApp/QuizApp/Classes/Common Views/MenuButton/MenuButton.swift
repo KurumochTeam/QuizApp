@@ -15,20 +15,22 @@ class MenuButton: UIView, NibOwnerLoadable {
     
     private var onTapAction: (() -> ())?
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        loadNibContent()
-    }
+    private var shadowLayer: CALayer!
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         loadNibContent()
     }
     
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        shadowLayer = createShadowLayer(for: layer)
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         addCornerRadius()
-        addFloatingShadow()
+        adjust(shadowLayer: shadowLayer, within: layer)
     }
     
     func configure(title: String, image: UIImage?, tapAction: (() -> ())?) {
@@ -49,39 +51,15 @@ class MenuButton: UIView, NibOwnerLoadable {
 }
 
 private extension MenuButton {
-    struct LayerConstants {
+    enum LayerConstants {
         static let relativeWidth = CGFloat(0.83)
-        static let shadowRadius = CGFloat(40)
-        static let shadowOffset = CGSize(width: 0, height: 8)
     }
     
     func addCornerRadius() {
         containerView.layer.cornerRadius =
             layer.frame.height * LayerConstants.relativeWidth / 2
+        layer.cornerRadius = containerView.layer.cornerRadius
         
         containerView.layer.masksToBounds = true
-    }
-    
-    func addFloatingShadow() {
-        let shadowLayerWidth = layer.frame.width - containerView.layer.cornerRadius / 2
-        let shadowLayer = CALayer()
-        shadowLayer.frame = CGRect(
-            x: (layer.frame.width - shadowLayerWidth) / 2,
-            y: layer.frame.height / 2,
-            width: shadowLayerWidth,
-            height: layer.frame.height / 2
-        )
-        
-        shadowLayer.cornerRadius = containerView.layer.cornerRadius
-        
-        shadowLayer.shadowOpacity = 1.0
-        shadowLayer.backgroundColor = R.color.violetMain()?.cgColor
-        shadowLayer.shadowColor = R.color.violetMain()?.cgColor
-        shadowLayer.shadowOffset = LayerConstants.shadowOffset
-        shadowLayer.shadowRadius = LayerConstants.shadowRadius
-        shadowLayer.masksToBounds = false
-        layer.masksToBounds = false
-        
-        layer.insertSublayer(shadowLayer, at: 0)
     }
 }

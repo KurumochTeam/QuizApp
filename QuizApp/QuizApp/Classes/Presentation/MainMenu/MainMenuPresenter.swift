@@ -18,6 +18,7 @@ final class MainMenuDefaultPresenter: MainMenuPresenter, Presentable {
     }
     
     func onPlayPressed() {
+        // TODO: start Timer
         view.showGameTypes()
     }
     

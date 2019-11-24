@@ -22,23 +22,21 @@ final class MainMenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureButtons()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
         configureBackground()
         configureTitle()
     }
     
     private func configureButtons() {
         playMenuButtom.cofigure(
-            text: "TEST",
+            text: "Play",
             mainImage: R.image.playIcon(),
-            leftImage: .actions,
-            rightImage: .checkmark,
+            leftImage: R.image.heartIcon()!,
+            rightImage: R.image.clockIcon()!,
             handlers: .init(
+                didTapMainButton: presenter.onPlayPressed,
                 didTapLeftButton: {},
-                didTapRightButton: {})
+                didTapRightButton: {}
+            )
         )
         
         rankingsMenuButton.configure(
@@ -74,20 +72,20 @@ private extension MainMenuViewController {
             backgroundLayer = CALayer()
             backgroundLayer.backgroundColor = R.color.violetSecondary()?.cgColor
             view.layer.insertSublayer(backgroundLayer, at: 0)
+            
+            let backgroundYOffset = buttonsStackView.center.y - view.center.y
+          
+            backgroundLayer.frame = CGRect(
+                x: 0,
+                y: backgroundYOffset + LayerConstants.additionalOffset,
+                width: buttonsStackView.frame.height + backgroundYOffset,
+                height: view.frame.height
+            )
+              
+            backgroundLayer.setAffineTransform(
+                CGAffineTransform(rotationAngle: LayerConstants.backgroundRotation)
+            )
         }
-        
-        let backgroundYOffset = buttonsStackView.center.y - view.center.y
-        
-        backgroundLayer.frame = CGRect(
-            x: 0,
-            y: backgroundYOffset + LayerConstants.additionalOffset,
-            width: buttonsStackView.frame.height + backgroundYOffset,
-            height: view.frame.height
-        )
-        
-        backgroundLayer.setAffineTransform(
-            CGAffineTransform(rotationAngle: LayerConstants.backgroundRotation)
-        )
     }
     
     func configureTitle() {
@@ -107,11 +105,11 @@ private extension MainMenuViewController {
 
 extension MainMenuViewController: MainMenuView {
     func showGameTypes() {
-        // TODO: Implement in task-1
+        playMenuButtom.showAdditionalButtons()
     }
     
     func hideGameTypes() {
-        // TODO: Implement in task-1
+        playMenuButtom.showMainButton()
     }
 }
 
